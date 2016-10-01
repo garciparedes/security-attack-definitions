@@ -83,22 +83,27 @@
 
     \section{Denial of Service (DoS)}
         \paragraph{}
+		El ataque de denegación de servicios consiste en la interrupción de la actividad de un host servidor debido al colapso por una gran afluencia de tráfico dirigido hacia él. Con ello se consigue que los accesos legítimos al recurso no puedan llevarse a cabo debido al colapso por los artificiales. La vulnerabilidad en la que se basa este ataque es la limitación física de procesamiento del host servidor. Este tipo de ataque es muy popular entre hacktivistas.
 
 
     \section{LDAP injection}
         \paragraph{}
+		Este ataque consiste en la ejecucción de código malicioso en el host servidor generalmente introducido a partir de entradas de formularios web. Lo que se busca generalmente en este tipo de ataques es obtener mayores privilegios para acceder al host servidor o la obtención de información en la respuesta a la petición del formualrio.
 
 
     \section{Man-in-the-middle}
         \paragraph{}
+		El ataque Man in the Middle se dirige generalmente a una conexión entre pares (dos hosts) y consiste en la colocación de un tercero entre medias cuya finalidad es obtener y/o modificar el tráfico de datos que pasa a través de él. Una manera de protegerse ante este ataque es mantener una comunicación cifrada eliminando el riesgo a que el tercer host no pueda entender la información ni añadir nueva, aunque si puede eliminarla.
 
 
     \section{Session hijacking attack}
         \paragraph{}
+		El ataque se basa en la obtención de acceso no autorizado a los recursos de un sitio web mediante la obtención de un token de acceso por cualquier vía, ya sea man-in-the-middle, fuerza bruta, etc. Muchos servicios web utilizan sistemas de token para controlar el acceso a sus recursos, los cuales son entregados al host cliente una vez que se ha autenticado en el servicio. Este ataque por lo tanto realiza una vulneración de identidad sobre un cliente real del servicio para obtener acceso.
 
 
     \section{SQL Injection: Inyección SQL}
         \paragraph{}
+		Este ataque es muy común y consiste en la ejecución de código SQL en una base de datos donde se almacena información valiosa. Estas sentencias generalmente se camuflan entre los campos de un formulario HTTP y se ejecutan en el momento de almacenar dichos valores en la base de datos. Actualmente muchos gestores de base de datos (DBMS) validan la entrada antes de realizar la sentencia para prevenir dichos ataques.
 
 
 \end{document}
